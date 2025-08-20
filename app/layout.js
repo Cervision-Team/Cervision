@@ -1,5 +1,9 @@
+
+
 import localFont from 'next/font/local';
 import "./globals.css";
+// import { appWithTranslation } from 'next-i18next';
+// import nextI18NextConfig from '../next-i18next.config';
 
 const poppins = localFont({
   src: [
@@ -124,3 +128,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+// export default appWithTranslation(RootLayout, nextI18NextConfig);

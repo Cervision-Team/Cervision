@@ -15,7 +15,7 @@ const FooterIcon = ({ icon, backgroundColor }) => {
 
   return (
     <button
-      className="w-8 h-8 px-[6px] py-[5px] flex items-center justify-center aspect-square bg-white cursor-pointer rounded-full transition-all duration-200 hover:text-white hover:border-none"
+      className="w-8 h-8 px-[6px] py-[5px] flex items-center justify-center aspect-square bg-white cursor-pointer  text-[#30235B] rounded-full transition-all duration-200 hover:text-white hover:border-none"
       style={baseStyle}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
