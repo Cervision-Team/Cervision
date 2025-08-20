@@ -37,21 +37,21 @@ const LanguageSelector = () => {
       <div className="relative">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="cursor-pointer flex flex-row items-center text-[14px] text-white dark:text-[var(--main-color)] rounded-md focus:outline-none"
+          className="cursor-pointer flex flex-row items-center text-[21px] text-white dark:text-[var(--main-color)] rounded-md focus:outline-none"
         >
           <Image
             src={currentFlag}
             alt={currentLang}
-            width={20}
-            height={20}
-            className="mr-[6px]"
+            width={32}
+            height={32}
+            className="mr-[8px]"
           />
           {currentLang.toUpperCase()}
           <Image
             src={ArrowDown}
             alt="Arrow Down"
-            width={26}
-            height={26}
+            width={32}
+            height={32}
             className={`transition-transform duration-300 ${
               isOpen ? "rotate-180" : "rotate-0"
             }`}

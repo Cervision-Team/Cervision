@@ -7,6 +7,7 @@
 
 @theme {
   --color-primary: #FFBF19;
+  --color-secondary: linear-gradient(90deg, #664AC1 0%, #30235B 100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,5 +20,5 @@
 body {
   background: #FFF8E7;
   color: var(--foreground);
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
 }
