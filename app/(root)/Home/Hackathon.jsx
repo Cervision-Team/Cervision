@@ -18,8 +18,8 @@ const Hackathon = () => {
           {isLargeScreen && (
             <Image src={PointTop} alt="Point Top" width={248} height={18} className="absolute top-[-38px] left-0" />
           )}
-          <h2 className="text-[#30235B] text-[32px]/[40px] md:text-[50px]/[70px] font-semibold mb-[28px]">Hackathon İdeyan Var? Onu Gerçəyə Çevir!</h2>
-          <p className="text-[#30235B] text-[18px]/[28px] md:text-[24px]/[36px] font-medium mb-[52px]">
+          <h2 className="text-[#30235B] text-[32px]/[40px] md:text-[50px]/[70px] font-semibold mb-[28px] max-sm:text-[28px]/[36px]">Halloo! <br/>Hackathon İdeyan Var?<br/> Onu Gerçəyə Çevir!</h2>
+          <p className="text-[#30235B] text-[18px]/[28px] md:text-[24px]/[36px] font-medium mb-[52px] text-start max-sm:text-[16px]/[24px]">
             Sənin İdeyan Dəyişiklik Yaratmağa Hazırdır.
             <br />
             <span className="font-semibold">Cervision</span> Bu Yolda

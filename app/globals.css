@@ -7,7 +7,8 @@
 
 @theme {
   --color-primary: #FFBF19;
-  --color-secondary: linear-gradient(90deg, #664AC1 0%, #30235B 100%);
+  --color-secondary: #30235B;
+  --color-dark: #1A1A1A;
 }
 
 @media (prefers-color-scheme: dark) {
