@@ -6,41 +6,46 @@ import Image from "next/image"
 const Information = () => {
   return (
     <>
-      <div className='w-full h-[200px] px-[16px] md:px-[80px] max-[1150px]:h-auto'>
-        <div className='w-full h-full bg-gradient-to-r from-[#30235B] to-[#664AC1] flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-[110px] mt-[40px] lg:mt-[86px] rounded-[20px] lg:rounded-[40px] shadow-[0_4px_10px_0_rgba(0,0,0,0.10)] py-[20px] lg:py-[38px]'>
-          
-          <div className='w-full lg:w-auto h-full flex flex-row items-center justify-center lg:justify-start pr-0 lg:pr-[92px] border-r-0 lg:border-r-[2px] border-r-solid border-r-[#FFF8E7] mb-6 lg:mb-0'>
+      <div className='w-full h-[200px] px-[16px] md:px-[80px] max-[1150px]:h-[150px] max-[500px]:h-[100px]'>
+        <div className='w-full h-full bg-gradient-to-r from-[#30235B] to-[#664AC1] px-[190px] max-[1033px]:px-[16px] flex flex-row lg:flex-row items-center justify-between mt-[40px] lg:mt-[86px] rounded-[20px] lg:rounded-[40px] shadow-[0_4px_10px_0_rgba(0,0,0,0.10)] py-[20px] lg:py-[38px] max-[1033px]:items-center max-[1033px]:bg-red-500'>
+ 
+          <div className='w-full lg:w-auto h-full flex flex-row items-center justify-center lg:justify-start mb-6 lg:mb-0 max-[1033px]:justify-center max-[1033px]:mt-[20px]'>
             <div className='flex flex-row items-center justify-center gap-5 lg:gap-[28px]'>
-              <div className='w-[40px] h-[40px] lg:w-[56px] lg:h-[56px] bg-[#FFF8E7] rounded-full flex items-center justify-center'>
-                <Image src={users} alt="users" width={24} height={24} />
+              <div className='w-[76px] h-[76px] lg:w-[56px] lg:h-[56px] bg-[#FFF8E7] rounded-full flex items-center justify-center max-[1033px]:w-[50px] max-[1033px]:h-[50px] max-[768px]:w-[40px] max-[768px]:h-[40px] max-[500px]:w-[30px] max-[500px]:h-[30px]'>
+                <Image src={users} alt="users" width={40} height={32} className="max-[1033px]:w-[25px] max-[1033px]:h-[20px] max-[500px]:w-[15px] max-[500px]:h-[12px]"/>
               </div>
               <div className="flex flex-col">
-                <p className="text-[#FFF8E7] text-[18px]/[24px] lg:text-[24px]/[30px] font-bold">20+</p>
-                <p className="text-[#C4C4C4] text-[16px]/[24px] lg:text-[20px]/[30px]">Staff</p>
+ <p className="text-[#FFF8E7] text-[36px]/[24px] lg:text-[24px]/[30px] font-bold max-[1033px]:text-[20px]/[24px] max-[500px]:text-[16px]/[20px]">20+</p>
+ <p className="text-[#C4C4C4] text-[24px]/[24px] lg:text-[20px]/[30px] max-[1033px]:text-[16px]/[24px] max-[500px]:text-[12px]/[16px]">Staff</p>
               </div>
             </div>
           </div>
 
-          <div className='w-full lg:w-auto h-full flex flex-row items-center justify-center lg:justify-start pr-0 lg:pr-[92px] border-r-0 lg:border-r-[2px] border-r-solid border-r-[#FFF8E7] mb-6 lg:mb-0'>
+          <hr className="w-[2px] h-full bg-[#FFF8E7] max-[1033px]:hidden max-[500px]:hidden"/>
+
+          <div className='w-full lg:w-auto h-full flex flex-row items-center justify-center lg:justify-start mb-6 lg:mb-0 max-[1033px]:justify-center  max-[1033px]:mt-[20px]'>
             <div className='flex flex-row items-center justify-center gap-5 lg:gap-[28px]'>
-              <div className='w-[40px] h-[40px] lg:w-[56px] lg:h-[56px] bg-[#FFF8E7] rounded-full flex items-center justify-center'>
-                <Image src={location} alt="location" width={24} height={24} />
+              <div className='w-[76px] h-[76px] lg:w-[56px] lg:h-[56px] bg-[#FFF8E7] rounded-full flex items-center justify-center max-[1033px]:w-[50px] max-[1033px]:h-[50px] max-[768px]:w-[40px] max-[768px]:h-[40px] max-[500px]:w-[30px] max-[500px]:h-[30px]'>
+                <Image src={location} alt="location" width={40} height={40} className="max-[1033px]:w-[25px] max-[1033px]:h-[20px] max-[500px]:w-[15px] max-[500px]:h-[12px]"/>
               </div>
               <div className="flex flex-col">
-                <p className="text-[#FFF8E7] text-[18px]/[24px] lg:text-[24px]/[30px] font-bold">10+</p>
-                <p className="text-[#C4C4C4] text-[16px]/[24px] lg:text-[20px]/[30px]">Location</p>
+                <p className="text-[#FFF8E7] text-[36px]/[24px] lg:text-[24px]/[30px] font-bold max-[1033px]:text-[20px]/[24px] max-[500px]:text-[16px]/[20px]">10+</p>
+                <p className="text-[#C4C4C4] text-[24px]/[24px] lg:text-[20px]/[30px] max-[500px]:text-[12px]/[16px]">Location</p>
               </div>
             </div>
           </div>
 
-          <div className='w-full lg:w-auto h-full flex flex-row items-center justify-center lg:justify-start pr-0 lg:pr-[92px]'>
+          <hr className="w-[2px] h-full bg-[#FFF8E7] max-[1033px]:hidden max-[500px]:hidden"/>
+
+
+          <div className='w-full lg:w-auto h-full flex flex-row items-center justify-center lg:justify-start'>
             <div className='flex flex-row items-center justify-center gap-5 lg:gap-[28px]'>
-              <div className='w-[40px] h-[40px] lg:w-[56px] lg:h-[56px] bg-[#FFF8E7] rounded-full flex items-center justify-center'>
-                <Image src={projects} alt="projects" width={24} height={24} />
+              <div className='w-[76px] h-[76px] lg:w-[56px] lg:h-[56px] bg-[#FFF8E7] rounded-full flex items-center justify-center max-[1033px]:w-[50px] max-[1033px]:h-[50px] max-[768px]:w-[40px] max-[768px]:h-[40px] max-[500px]:w-[30px] max-[500px]:h-[30px]'>
+                <Image src={projects} alt="projects" width={40} height={40} className="max-[1033px]:w-[25px] max-[1033px]:h-[20px] max-[500px]:w-[15px] max-[500px]:h-[12px]"/>
               </div>
               <div className="flex flex-col">
-                <p className="text-[#FFF8E7] text-[18px]/[24px] lg:text-[24px]/[30px] font-bold">40+</p>
-                <p className="text-[#C4C4C4] text-[16px]/[24px] lg:text-[20px]/[30px]">Project</p>
+                <p className="text-[#FFF8E7] text-[36px]/[24px] lg:text-[24px]/[30px] font-bold max-[1033px]:text-[20px]/[24px] max-[500px]:text-[16px]/[20px]">40+</p>
+                <p className="text-[#C4C4C4] text-[24px]/[24px] lg:text-[20px]/[30px] max-[500px]:text-[12px]/[16px]">Project</p>
               </div>
             </div>
           </div>

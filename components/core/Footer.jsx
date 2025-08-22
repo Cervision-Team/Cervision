@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       <section className="mt-[80px] sm:mt-[100px] lg:mt-[120px] bg-gradient-to-r from-[#664AC1] to-[#30235B]">
-        <div className="relative max-w-[1600px] w-full px-4 sm:px-8 lg:px-20 pt-10 sm:pt-14 lg:pt-16">
+        <div className="relative w-full px-4 sm:px-8 lg:px-20 pt-10 sm:pt-14 lg:pt-16">
           {/* Background overlay */}
           <div className="absolute inset-0 bg-[#4361EE] opacity-10 -z-10"></div>
 
@@ -44,6 +44,19 @@ const Footer = () => {
                    cervision.edu.az@gmail.com
                  </a>
                </div>
+
+              <div className="flex items-center justify-center sm:justify-start mt-4 sm:mt-[8px]">
+                <div className='flex flex-row items-center justify-center gap-4 sm:gap-[20px]'>
+                  <a target="_blank" href="https://www.instagram.com/cervision.az?igsh=MTh6MGQxNnJhZG03MA==">
+                  <FooterIcon icon={<FaInstagram />} backgroundColor="linear-gradient(to right, #8a3ab9, #e95950, #fccc63)" />
+                  </a>
+                  <FooterIcon icon={<FaFacebookF />} backgroundColor="#0035BB" />
+                  <a target="_blank" href="https://www.linkedin.com/company/106264282/admin/dashboard/">
+                  <FooterIcon icon={<FaLinkedinIn />} backgroundColor="#0073AF" />
+                  </a>
+                </div>
+              </div>
+
               </div>
             </div>
 
@@ -87,14 +100,6 @@ const Footer = () => {
               </p>
 
               <EmailInput />
-
-                  <div className="flex items-center justify-center sm:justify-start mt-4 sm:mt-[8px] lg:self-center">
-                <div className='flex flex-row items-center justify-center gap-4 sm:gap-[20px]'>
-                  <FooterIcon icon={<FaInstagram />} backgroundColor="linear-gradient(to right, #8a3ab9, #e95950, #fccc63)" />
-                  <FooterIcon icon={<FaFacebookF />} backgroundColor="#0035BB" />
-                  <FooterIcon icon={<FaLinkedinIn />} backgroundColor="#0073AF" />
-                </div>
-              </div>
             </div>
           </div>
 
