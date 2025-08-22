@@ -12,7 +12,7 @@ const Offers = () => {
   className="w-full max-w-[774px] h-auto mt-8 lg:mt-0"
 />
         
-        <div className="flex flex-col justify-center items-center max-[1100px]:px-[16px]">
+        <div className="flex flex-col justify-center items-start max-[1100px]:px-[16px]">
           <p className="text-[#0B132A] text-[32px]/[50px] font-semibold mb-[40px]">Cervision olaraq biz nə vəd edirik?</p>
 
           <div className="flex flex-row items-center gap-[10px] mb-[15px]">
