@@ -108,17 +108,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="manifest" href="/manifest.json" />
+        {/* <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="Invest Home" />
+        <meta name="apple-mobile-web-app-title" content="Invest Home" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
         <meta name="theme-color" content="#ffffff" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <script
+        <link rel="icon" href="/favicon.ico" />
+        {/* <meta name="apple-mobile-web-app-status-bar-style" content="default" /> */}
+        {/* <script
           src="https://kit.fontawesome.com/066942706e.js"
           crossOrigin="anonymous"
           async
-        ></script>
+        ></script> */}
       </head>
       <body
         className={`${poppins?.variable || ""} antialiased`}
