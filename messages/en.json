@@ -1,0 +1,50 @@
+{
+  "Hackathon": {
+    "hello": "Halloo",
+    "idea": "Got a Hackathon Idea?",
+    "reality": " Turn It Into Reality!",
+    "explanation": "Your idea is ready to make a difference.",
+    "explanation2": " is here to support you on this journey!",
+    "button": "Fill the Form"
+  },
+  "Information": {
+    "staff": "Staff",
+    "location": "Location",
+    "project": "Project"
+  },
+  "Teams": {
+    "title": "Showcasing Your Expertise and Skills",
+    "description": "“We provide solutions aligned with the latest trends, keeping our clients’ needs in mind.”"
+  },
+  "Offers": {
+    "title": "What do we promise at Cervision?",
+    "firstOfferTitle": "Turning your idea into reality -",
+    "firstOfferDesc": "Professional team support to bring your idea to life.",
+    "secondOfferTitle": "Professional mentor support -",
+    "secondOfferDesc": "Collaborate with mentors to refine your idea and take your project a step forward.",
+    "thirdOfferTitle": "Team spirit and collaboration -",
+    "thirdOfferDesc": "Work on real projects with a professional team and grow your experience and portfolio.",
+    "fourthOfferTitle": "Investor attraction -",
+    "fourthOfferDesc": "Promote your project on a larger scale and attract investors to turn your idea into a profitable product."
+  },
+  "Footer": {
+    "links": "Links",
+    "startup": "Startup",
+    "ecosystem": "Ecosystem",
+    "hackathon": "Hackathon",
+    "about": "About Us",
+    "services": "Services",
+    "blog": "Blog",
+    "beMember": "Become a Member",
+    "teams": "Teams",
+    "uxuiDesign": "UX/UI Design",
+    "graphicDesign": "Graphic Design",
+    "motionDesign": "Motion Design",
+    "frontEndDevelop": "Front-end Development",
+    "backEndDevelop": "Back-end Development",
+    "cybersecurity": "Cybersecurity",
+    "digitalMarketing": "Digital Marketing",
+    "law": "Law",
+    "recommadations": "Share your suggestions with us!"
+  }
+}

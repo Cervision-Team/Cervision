@@ -3,11 +3,11 @@ import Information from "./Home/Information";
 import Offers from "./Home/Offers";
 import Teams from "./Home/Teams";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
     <Hackathon />
-    <Information />
+    <Information/>
     <Teams />
     <Offers />
     </>

@@ -1,3 +1,5 @@
+"use client"
+
 import UxUiDesign from "../../../public/svg/ux-ui-design.svg"
 import GraphicDesign from "../../../public/svg/graphic-design.svg"
 import MotionDesign from "../../../public/svg/motion-design.svg"
@@ -8,14 +10,17 @@ import CyberSecurity from "../../../public/svg/cyber-security.svg"
 import BackEnd from "../../../public/svg/back-end.svg"
 import Law from "../../../public/svg/law.svg"
 import { TeamsCardImageFirst, TeamsCardTextFirst } from '@/components/ui/TeamsCard'
+import { useTranslations } from "next-intl"
 
 
 const Teams = () => {
+
+    const t = useTranslations('Teams');
   return (
     <>
       <div className='w-full h-auto px-[80px] flex flex-col items-center justify-center mt-[60px] text-center max-lg:px-[16px]'>
-        <h2 className='text-secondary text-[32px]/[40px] md:text-[50px]/[70px] font-medium mb-[40px]'>Peşəkarlığınızı və bacarıqlarınızı nümayiş etdirdiyimiz sahələr</h2>
-        <p className='max-w-[628px] text-[#222] text-[18px]/[28px] md:text-[20px]/[30px] italic mb-[60px]'>‘’Müştərilərimizin ehtiyaclarını nəzərə alaraq, ən son trendlərə uyğun həllər təqdim edirik.’’</p>
+        <h2 className='text-secondary text-[32px]/[40px] md:text-[50px]/[70px] font-medium mb-[40px]'>{t('title')}</h2>
+        <p className='max-w-[628px] text-[#222] text-[18px]/[28px] md:text-[20px]/[30px] italic mb-[60px]'>{t('description')}</p>
 
         <div className='w-full flex flex-row flex-wrap items-center justify-center gap-x-[24px] gap-y-[40px]'>
            <TeamsCardTextFirst 

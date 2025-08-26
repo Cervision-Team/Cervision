@@ -2,9 +2,12 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import FormArrow from "../../public/svg/FormArrow.svg";
+import { useTranslations } from 'next-intl';
 
 const FormButton = () => {
   const [formLink, setFormLink] = useState('');
+
+    const t = useTranslations('Hackathon');
 
   useEffect(() => {
     fetch('/api/getFormLink')
@@ -33,7 +36,7 @@ const FormButton = () => {
       onClick={handleClick}
       disabled={!formLink}
     >
-      <span className="text-[20px] font-500">Formu Doldur</span>
+      <span className="text-[20px] font-500">{t('button')}</span>
       <Image src={FormArrow} alt="Form Arrow" width={22} height={22} />
     </button>
     </div>

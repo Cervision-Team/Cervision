@@ -5,14 +5,14 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3000 -H 0.0.0.0",
     "lint": "next lint"
   },
   "dependencies": {
     "i18next": "^25.4.0",
     "next": "15.4.7",
     "next-i18next": "^15.4.2",
-    "next-intl": "^4.3.4",
+    "next-intl": "^4.3.5",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-i18next": "^15.7.0",
