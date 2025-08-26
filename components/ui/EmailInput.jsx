@@ -43,7 +43,7 @@ const EmailInput = () => {
       <div className="relative w-full max-w-[320px] flex justify-center sm:justify-start">
         <input
           type="text"
-          placeholder="Email Address"
+          placeholder="Buraya yazın...."
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="w-full h-[50px] sm:h-[60px] pl-4 sm:pl-5 pr-14 sm:pr-20 rounded-full text-black shadow-md outline-none bg-white placeholder-gray-400 text-sm sm:text-base focus:placeholder-transparent"

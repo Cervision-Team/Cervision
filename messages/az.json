@@ -1,0 +1,50 @@
+{
+    "Hackathon": {
+    "hello": "Halloo",
+    "idea": "Hackathon İdeyan Var?",
+    "reality": " Onu Gerçəyə Çevir!",
+    "explanation": "Sənin İdeyan Dəyişiklik Yaratmağa Hazırdır.",
+    "explanation2": " Bu Yolda Sənin Yanındadır!",
+    "button": "Formu Doldur"
+  },
+  "Information": {
+    "staff": "Staff",
+    "location": "Location",
+    "project": "Project"
+  },
+  "Teams": {
+    "title": "Peşəkarlığınızı və bacarıqlarınızı nümayiş etdirdiyimiz sahələr",
+    "description": "‘’Müştərilərimizin ehtiyaclarını nəzərə alaraq, ən son trendlərə uyğun həllər təqdim edirik.’’"
+  },
+  "Offers": {
+    "title":"Cervision olaraq biz nə vəd edirik?",
+    "firstOfferTitle": "İdeyanı gerçəyə çevirmək-",
+    "firstOfferDesc": " ideyanın reallaşması üçün peşəkar komanda dəstəyi.",
+    "secondOfferTitle": "Peşəkar mentor dəstəyi-",
+    "secondOfferDesc": " burada siz ideyanızın təkmilləşməsi üçün mentorlarımıla fikir mübadiləsi apararaq layihəni bir adım önə daşıyırsız.",
+    "thirdOfferTitle": "Komanda ruhu və əməkdaşlıq-",
+    "thirdOfferDesc": " peşəkar komanda ilə real layihələr üzərində çalışıb təcrübə və portfolionuzu böyütmə imkanı.",
+    "fourthOfferTitle": "İnvestor cəlbi-",
+    "fourthOfferDesc": " ideyanızın gəlirli bir məhsula çevrilməsi üçün layihəni genişmiqyaslarda tanıdaraq investor cəlbi."
+  },
+  "Footer": {
+    "links": "Keçidlər",
+    "startup": "Startup",
+    "ecosystem": "Eko sistem",
+    "hackathon": "Hackathon",
+    "about": "Haqqımızda",
+    "services": "Xidmətlər",
+    "blog": "Bloq",
+    "beMember": "Üzv ol",
+    "teams": "Komandalar",
+    "uxuiDesign": "UX/UI Dizayn",
+    "graphicDesign": "Qrafik Dizayn",
+    "motionDesign": "Motion Dizayn",
+    "frontEndDevelop": "Front-end Develop",
+    "backEndDevelop": "Back-end Develop",
+    "cybersecurity": "Kibertəhlükəsizlik",
+    "digitalMarketing": "Rəqəmsal Marketinq",
+    "law": "Hüquq",
+    "recommadations": "Təkliflərinizi bizimlə bölüşün!"
+  }
+}

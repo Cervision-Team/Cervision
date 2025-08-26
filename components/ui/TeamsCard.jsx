@@ -1,11 +1,15 @@
 import Image from "next/image";
 
 export const TeamsCardTextFirst = ({ mainDivBg, teamNameFirst, teamNameSecond, teamColor, teamBg, svg, svgWidth }) => {
+  const borderColor = mainDivBg === "#1A1A1A" ? "#FFF8E7" : "#191A23";
   return (
     <div
-      className="w-[90%] max-w-[411px] h-auto aspect-[411/260] p-6 md:p-10 rounded-[30px] border border-solid border-dark shadow-[0_5px_0_0_#191A23]
+      className="w-[90%] max-w-[411px] h-auto aspect-[411/260] p-6 md:p-10 rounded-[30px] border border-solid shadow-[0_5px_0_0_#191A23]
      flex flex-row items-center justify-between"
-      style={{ backgroundColor: mainDivBg }}
+      style={{
+        backgroundColor: mainDivBg,
+        borderColor: borderColor,
+      }}
     >
       <div className="flex flex-col items-start justify-center">
         <p
@@ -32,11 +36,15 @@ export const TeamsCardTextFirst = ({ mainDivBg, teamNameFirst, teamNameSecond, t
 };
 
 export const TeamsCardImageFirst = ({ mainDivBg, teamNameFirst, teamNameSecond, teamColor, teamBg, svg, svgWidth }) => {
+  const borderColor = mainDivBg === "#1A1A1A" ? "#FFF8E7" : "#191A23";
   return (
     <div
-      className="w-[90%] max-w-[411px] h-auto aspect-[411/260] p-6 md:p-10 rounded-[30px] border border-solid border-dark shadow-[0_5px_0_0_#191A23]
+      className="w-[90%] max-w-[411px] h-auto aspect-[411/260] p-6 md:p-10 rounded-[30px] border border-solid shadow-[0_5px_0_0_#191A23]
      flex flex-row items-center justify-between"
-      style={{ backgroundColor: mainDivBg }}
+      style={{
+        backgroundColor: mainDivBg,
+        borderColor: borderColor,
+      }}
     >
       <Image
         src={svg}

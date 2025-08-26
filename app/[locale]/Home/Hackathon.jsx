@@ -6,9 +6,12 @@ import PointTop from "../../../public/svg/PointTop.svg";
 import PointRight from "../../../public/svg/PointRight.svg";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import FormButton from "@/components/ui/FormButton";
+import { useTranslations } from "next-intl";
 
 const Hackathon = () => {
   const isLargeScreen = useMediaQuery("(min-width: 1100px)");
+  const t = useTranslations('Hackathon');
+
 
   return (
     <>
@@ -18,12 +21,11 @@ const Hackathon = () => {
           {isLargeScreen && (
             <Image src={PointTop} alt="Point Top" width={248} height={18} className="absolute top-[-38px] left-0" />
           )}
-          <h2 className="text-[#30235B] text-[32px]/[40px] md:text-[50px]/[70px] font-semibold mb-[28px] max-sm:text-[28px]/[36px]">Halloo! <br/>Hackathon İdeyan Var?<br/> Onu Gerçəyə Çevir!</h2>
+          <h2 className="text-[#30235B] text-[32px]/[40px] md:text-[50px]/[70px] font-semibold mb-[28px] max-sm:text-[28px]/[36px]">{t('hello')}! <br/>{t('idea')}<br/>{t('reality')}</h2>
           <p className="text-[#30235B] text-[18px]/[28px] md:text-[24px]/[36px] font-medium mb-[52px] text-start max-sm:text-[16px]/[24px]">
-            Sənin İdeyan Dəyişiklik Yaratmağa Hazırdır.
+            {t('explanation')}
             <br />
-            <span className="font-semibold">Cervision</span> Bu Yolda
-            Sənin Yanındadır!
+            <span className="font-semibold">Cervision</span> {t('explanation2')}
           </p>
           <FormButton />
         </div>

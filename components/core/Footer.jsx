@@ -1,3 +1,4 @@
+"use client"
 
 import Image from "next/image";
 import Link from "next/link";
@@ -7,8 +8,11 @@ import PhoneWhite from "../../public/svg/PhoneWhite.svg";
 import MailWhite from "../../public/svg/MailWhite.svg";
 import FooterIcon from '../ui/FooterIcon';
 import EmailInput from "../ui/EmailInput";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+
+  const t = useTranslations('Footer');
 
   return (
     <>
@@ -62,11 +66,11 @@ const Footer = () => {
 
             {/* Keçidlər */}
             <div className="flex flex-col gap-6 sm:gap-8 mt-6 sm:mt-0 items-center sm:items-start">
-              <span className="text-primary text-lg sm:text-xl lg:text-[24px] font-medium">Keçidlər</span>
+              <span className="text-primary text-lg sm:text-xl lg:text-[24px] font-medium">{t('links')}</span>
               <ul className="flex flex-col gap-2 text-sm sm:text-base text-white">
-                {["Startup", "Eko sistem", "Hackathon", "Haqqımızda", "Xidmətlər", "Bloq", "Üzv ol"].map((place) => (
-                  <li key={place}>
-                    <Link href="/">{place}</Link>
+                {['startup', 'ecosystem', 'hackathon', 'about', 'services', 'blog', 'beMember'].map((key) => (
+                  <li key={key}>
+                    <Link href="/">{t(`${key}`)}</Link>
                   </li>
                 ))}
               </ul>
@@ -74,18 +78,18 @@ const Footer = () => {
 
             {/* Komandalar */}
             <div className="flex flex-col gap-6 sm:gap-8 items-center sm:items-start">
-              <span className="text-primary text-lg sm:text-xl lg:text-[24px] font-medium">Komandalar</span>
-              <ul className="flex flex-col gap-2 text-sm sm:text-base text-white">
+              <span className="text-primary text-lg sm:text-xl lg:text-[24px] font-medium">{t('teams')}</span>
+              <ul className="flex flex-col gap-2 text-sm sm:text-base text-white">                
                 {[
-                  { name: "UX/UI Dizayn", href: "/" },
-                  { name: "Qrafik Dizayn", href: "/" },
-                  { name: "Motion Dizayn", href: "/" },
-                  { name: "Front-end Development", href: "/" },
-                  { name: "Back-end Development", href: "/" },
-                  { name: "Kibertəhlükəsizlik", href: "/" },
-                  { name: "Rəqəmsal Marketinq", href: "/" },
-                  { name: "Hüquq", href: "/" },
-                ].map((link) => (
+                  { name: t('uxuiDesign'), href: "/" },
+                  { name: t('graphicDesign'), href: "/" },
+                  { name: t('motionDesign'), href: "/" },
+                  { name: t('frontEndDevelop'), href: "/" },
+                  { name: t('backEndDevelop'), href: "/" },
+                  { name: t('cybersecurity'), href: "/" },
+                  { name: t('digitalMarketing'), href: "/" },
+                  { name: t('law'), href: "/" },
+                ].map((link) => (                  
                   <li key={link.name}>
                     <Link href={link.href}>{link.name}</Link>
                   </li>
@@ -96,7 +100,7 @@ const Footer = () => {
             {/* Email Subscription + Socials */}
             <div className="w-full lg:w-auto flex flex-col gap-6 mt-6 sm:mt-8 lg:mt-0 items-center sm:items-start">
               <p className="text-primary text-lg sm:text-xl lg:text-[23px] font-medium text-center sm:text-left">
-                Təkliflərinizi bizimlə bölüşün!
+                 {t('recommadations')}
               </p>
 
               <EmailInput />
