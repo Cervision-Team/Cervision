@@ -59,7 +59,7 @@ const handleSelect = (lang) => {
             alt={currentLang}
             width={32}
             height={32}
-            className="mr-[8px]"
+            className="mr-[8px] max-[500px]:mr-0"
           />
           <span className="max-[500px]:hidden">{currentLabel}</span>
           <Image

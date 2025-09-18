@@ -26,7 +26,7 @@ const FormButton = () => {
   return (
     <>
     
-    <div className='w-[248px] h-[60px] relative bg-[#FFBF19] rounded-[12px] cursor-pointer mb-[80px] group overflow-hidden'>
+    <div className='w-[248px] h-[60px] relative bg-[#FFBF19] rounded-[12px] cursor-pointer mb-[80px] group overflow-hidden max-sm:w-full'>
 <div
   className="absolute bottom-0 left-0 w-full h-0 transition-all duration-800 group-hover:h-full rounded-[12px]"
   style={{ background: "linear-gradient(90deg,  #FFBF19 0%, #30235B 100%)" }}
