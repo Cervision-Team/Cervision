@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+  --color-primary: #FFBF19;
+  --color-secondary: #30235B;
+  --color-dark: #1A1A1A;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: #FFF8E7;
+  color: var(--foreground);
+  font-family: "Poppins";
+}
