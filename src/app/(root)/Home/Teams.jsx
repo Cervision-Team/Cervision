@@ -15,8 +15,8 @@ const Teams = () => {
     <>
       <section className="max-w-[1600px] mx-auto">
         <div className='w-full h-auto px-[80px] flex flex-col items-center justify-center mt-[60px] text-center max-lg:px-[16px]'>
-          <h2 className='text-secondary text-[32px]/[40px] md:text-[50px]/[70px] font-medium mb-[40px]'>Peşəkarlığınızı və bacarıqlarınızı nümayiş etdirdiyimiz sahələr</h2>
-          <p className='max-w-[628px] text-[#222] text-[18px]/[28px] md:text-[20px]/[30px] italic mb-[60px]'>‘’Müştərilərimizin ehtiyaclarını nəzərə alaraq, ən son trendlərə uyğun həllər təqdim edirik.’’</p>
+          <h2 className='text-secondary text-[32px]/[40px] md:text-[50px]/[70px] font-medium mb-[10px]'>Peşəkarlığınızı və bacarıqlarınızı nümayiş etdirdiyimiz sahələr</h2>
+          <p className='max-w-[628px] text-[#222] text-[18px]/[28px] md:text-[20px]/[30px] italic mb-[35px]'>‘’Müştərilərimizin ehtiyaclarını nəzərə alaraq, ən son trendlərə uyğun həllər təqdim edirik.’’</p>
 
           <div className='w-full flex flex-row flex-wrap items-center justify-center gap-x-[24px] gap-y-[40px]'>
             <TeamsCardTextFirst

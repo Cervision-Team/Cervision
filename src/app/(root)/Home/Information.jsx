@@ -31,7 +31,7 @@ const Information = () => {
                 </div>
                 <div className="flex flex-col">
                   <p className="text-[#FFF8E7] text-[36px]/[24px] lg:text-[24px]/[30px] font-bold max-[1033px]:text-[20px]/[24px] max-[500px]:text-[16px]/[20px]">10+</p>
-                  <p className="text-[#C4C4C4] text-[24px]/[24px] lg:text-[20px]/[30px] max-[500px]:text-[12px]/[16px]">Location</p>
+                  <p className="text-[#C4C4C4] text-[24px]/[24px] lg:text-[20px]/[30px] max-[1033px]:text-[16px]/[24px] max-[500px]:text-[12px]/[16px]">Location</p>
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@ const Information = () => {
                 </div>
                 <div className="flex flex-col">
                   <p className="text-[#FFF8E7] text-[36px]/[24px] lg:text-[24px]/[30px] font-bold max-[1033px]:text-[20px]/[24px] max-[500px]:text-[16px]/[20px]">40+</p>
-                  <p className="text-[#C4C4C4] text-[24px]/[24px] lg:text-[20px]/[30px] max-[500px]:text-[12px]/[16px]">Project</p>
+                  <p className="text-[#C4C4C4] text-[24px]/[24px] lg:text-[20px]/[30px] max-[1033px]:text-[16px]/[24px] max-[500px]:text-[12px]/[16px]">Projects</p>
                 </div>
               </div>
             </div>

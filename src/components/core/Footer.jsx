@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
@@ -19,53 +18,52 @@ const Footer = () => {
 
           {/* Footer Container */}
           <div className="relative z-10 font-medium text-white 
-            grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 
-            gap-10 sm:gap-12 lg:gap-0
-            text-center sm:text-left
-            items-center sm:items-start">
+            grid grid-cols-2 lg:grid-cols-4
+            gap-4 xs:gap-6 sm:gap-8 lg:gap-12">
 
             {/* Logo and Contact Info */}
-            <div className="flex flex-col gap-3 sm:gap-8 items-center sm:items-start">
-              <div className="flex items-center gap-2 justify-center sm:justify-start">
-                <Image src={CervisionLogo} alt="Cervision" width={32} height={32} />
-                <span className="text-primary font-semibold text-xl sm:text-2xl main-logo-style">Cervision</span>
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <div className="flex items-center gap-2">
+                <Image src={CervisionLogo} alt="Cervision" width={28} height={28} className="sm:w-8 sm:h-8" />
+                <span className="text-primary font-semibold text-lg sm:text-xl lg:text-2xl main-logo-style">Cervision</span>
               </div>
-              <div className="flex flex-col gap-3 text-sm sm:text-base">
-                <div className="flex items-center gap-2 justify-center sm:justify-start">
-                  <Image src={PhoneWhite} alt="Phone" width={18} height={18} />
-                  <a href="tel:+994552224120" className="break-words">+994 55 971 17 67</a>
-                </div>
-               <div className="flex items-start gap-2">
-                 <Image src={MailWhite} alt="Mail" width={18} height={18} />
-                 <a
-                   href="mailto:cervision.edu.az@gmail.com"
-                   className="break-all whitespace-normal text-sm sm:text-base leading-snug"
-                 >
-                   cervision.edu.az@gmail.com
-                 </a>
-               </div>
-
-              <div className="flex items-center justify-center sm:justify-start mt-4 sm:mt-[8px]">
-                <div className='flex flex-row items-center justify-center gap-4 sm:gap-[20px]'>
-                  <a target="_blank" href="https://www.instagram.com/cervision.az?igsh=MTh6MGQxNnJhZG03MA==">
-                  <FooterIcon icon={<FaInstagram />} backgroundColor="linear-gradient(to right, #8a3ab9, #e95950, #fccc63)" />
-                  </a>
-                  <FooterIcon icon={<FaFacebookF />} backgroundColor="#0035BB" />
-                  <a target="_blank" href="https://www.linkedin.com/company/106264282/admin/dashboard/">
-                  <FooterIcon icon={<FaLinkedinIn />} backgroundColor="#0073AF" />
+              <div className="flex flex-col gap-2 sm:gap-3 text-xs sm:text-sm lg:text-base">
+                <div className="flex items-center gap-2">
+                  <Image src={PhoneWhite} alt="Phone" width={16} height={16} className="flex-shrink-0 sm:w-[18px] sm:h-[18px]" />
+                  <a href="tel:+994559711767" className="hover:text-primary transition-colors text-xs sm:text-sm lg:text-base">
+                    +994 55 971 17 67
                   </a>
                 </div>
-              </div>
+                <div className="flex items-start gap-2">
+                  <Image src={MailWhite} alt="Mail" width={16} height={16} className="flex-shrink-0 mt-0.5 sm:w-[18px] sm:h-[18px] sm:mt-1" />
+                  <a
+                    href="mailto:cervision.edu.az@gmail.com"
+                    className="break-all text-xs sm:text-sm lg:text-base leading-snug hover:text-primary transition-colors"
+                  >
+                    cervision.edu.az@gmail.com
+                  </a>
+                </div>
 
+                <div className="flex items-center mt-1 sm:mt-2">
+                  <div className='flex flex-row items-center gap-2 sm:gap-4'>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cervision.az?igsh=MTh6MGQxNnJhZG03MA==">
+                      <FooterIcon icon={<FaInstagram />} backgroundColor="linear-gradient(to right, #8a3ab9, #e95950, #fccc63)" />
+                    </a>
+                    <FooterIcon icon={<FaFacebookF />} backgroundColor="#0035BB" />
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/106264282/admin/dashboard/">
+                      <FooterIcon icon={<FaLinkedinIn />} backgroundColor="#0073AF" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Keçidlər */}
-            <div className="flex flex-col gap-6 sm:gap-8 mt-6 sm:mt-0 items-center sm:items-start">
-              <span className="text-primary text-lg sm:text-xl lg:text-[24px] font-medium">Keçidlər</span>
-              <ul className="flex flex-col gap-2 text-sm sm:text-base text-white">
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <span className="text-primary text-base sm:text-lg lg:text-xl xl:text-[24px] font-medium">Keçidlər</span>
+              <ul className="flex flex-col gap-1.5 sm:gap-2 text-xs sm:text-sm lg:text-base text-white">
                 {["Startup", "Eko sistem", "Hackathon", "Haqqımızda", "Xidmətlər", "Bloq", "Üzv ol"].map((place) => (
-                  <li key={place}>
+                  <li key={place} className="hover:text-primary transition-colors">
                     <Link href="/">{place}</Link>
                   </li>
                 ))}
@@ -73,9 +71,9 @@ const Footer = () => {
             </div>
 
             {/* Komandalar */}
-            <div className="flex flex-col gap-6 sm:gap-8 items-center sm:items-start">
-              <span className="text-primary text-lg sm:text-xl lg:text-[24px] font-medium">Komandalar</span>
-              <ul className="flex flex-col gap-2 text-sm sm:text-base text-white">
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <span className="text-primary text-base sm:text-lg lg:text-xl xl:text-[24px] font-medium">Komandalar</span>
+              <ul className="flex flex-col gap-1.5 sm:gap-2 text-xs sm:text-sm lg:text-base text-white">
                 {[
                   { name: "UX/UI Dizayn", href: "/" },
                   { name: "Qrafik Dizayn", href: "/" },
@@ -86,25 +84,26 @@ const Footer = () => {
                   { name: "Rəqəmsal Marketinq", href: "/" },
                   { name: "Hüquq", href: "/" },
                 ].map((link) => (
-                  <li key={link.name}>
+                  <li key={link.name} className="hover:text-primary transition-colors">
                     <Link href={link.href}>{link.name}</Link>
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Email Subscription + Socials */}
-            <div className="w-full lg:w-auto flex flex-col gap-6 mt-6 sm:mt-8 lg:mt-0 items-center sm:items-start">
-              <p className="text-primary text-lg sm:text-xl lg:text-[23px] font-medium text-center sm:text-left">
+            {/* Email Subscription */}
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <p className="text-primary text-base sm:text-lg lg:text-xl xl:text-[23px] font-medium">
                 Təkliflərinizi bizimlə bölüşün!
               </p>
-
-              <EmailInput />
+              <div className="w-full max-w-[320px]">
+                <EmailInput />
+              </div>
             </div>
           </div>
 
           {/* Divider */}
-          <div className="w-full h-[1px] bg-[rgba(255,248,231,0.20)] mx-auto mt-10 sm:mt-[60px] lg:mt-[130px]"></div>
+          <div className="w-full h-[1px] bg-[rgba(255,248,231,0.20)] mx-auto mt-10 sm:mt-[60px] lg:mt-[80px]"></div>
 
           {/* Bottom Section */}
           <div className="h-auto py-4 flex flex-col md:flex-row items-center justify-center md:justify-between text-white text-xs sm:text-sm md:text-base font-medium text-center gap-2">
