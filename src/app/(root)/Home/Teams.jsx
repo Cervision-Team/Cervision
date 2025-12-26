@@ -18,7 +18,7 @@ const Teams = () => {
           <h2 className='text-secondary text-[32px]/[40px] md:text-[50px]/[70px] font-medium mb-[10px]'>Peşəkarlığınızı və bacarıqlarınızı nümayiş etdirdiyimiz sahələr</h2>
           <p className='max-w-[628px] text-[#222] text-[18px]/[28px] md:text-[20px]/[30px] italic mb-[35px]'>‘’Müştərilərimizin ehtiyaclarını nəzərə alaraq, ən son trendlərə uyğun həllər təqdim edirik.’’</p>
 
-          <div className='w-full flex flex-row flex-wrap items-center justify-center gap-x-[24px] gap-y-[40px]'>
+          <div className='w-full flex flex-row flex-wrap items-center justify-center gap-x-[24px] gap-y-[40px] max-[877px]:gap-y-5'>
             <TeamsCardTextFirst
               mainDivBg="#FFF8E7"
               teamNameFirst="UX/UI"

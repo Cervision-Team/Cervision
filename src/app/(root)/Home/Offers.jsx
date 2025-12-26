@@ -5,8 +5,8 @@ import Check from "../../../../public/svg/check.svg"
 const Offers = () => {
   return (
     <>
-      <section  className="max-w-[1600px]  mx-auto">
-        <div className='w-full h-auto pr-[80px] flex flex-row justify-between items-center mt-[100px] gap-[90px] max-[1100px]:flex-col max-[1100px]:items-start max-lg:pr-[16px] max-lg:gap-[15px]'>
+      <section  className="max-w-[1600px]  mx-auto pb-10">
+        <div className='w-full h-auto pr-[80px] flex flex-row justify-between items-center mt-[100px] gap-[90px] max-[1100px]:flex-col max-[1100px]:items-start max-lg:pr-[16px] max-lg:gap-[30px]'>
           <Image
             src={Developer}
             alt="Developer"
