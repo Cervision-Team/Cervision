@@ -12,7 +12,7 @@ const Hackathon = () => {
 
   return (
     <>
-      <section className="max-w-[1600px] mx-auto w-full h-auto px-[80px] flex flex-col lg:flex-row items-center justify-between mt-[30px] text-center lg:text-left max-lg:px-[16px] relative">
+      <section className="max-w-[1600px] mx-auto w-full h-auto px-[80px] flex flex-col lg:flex-row items-center justify-between mt-[70px] text-center lg:text-left max-lg:px-[16px] relative">
         <div className="flex flex-col items-center lg:items-start justify-center relative">
           {isLargeScreen && (
             <Image src={PointTop} alt="Point Top" width={248} height={18} className="absolute top-[-38px] left-0" />
